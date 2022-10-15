@@ -1,11 +1,7 @@
 #include <stdio.h>
-
 /**
- * main - prints the strings in the ptint function
- *
- * Description: uses main function
- * initialze types and then print tgeir sizeof as standard ouput
- * Return: 0
+ * main - Entry
+ * Return: Always 0
  */
 int main(void)
 {
