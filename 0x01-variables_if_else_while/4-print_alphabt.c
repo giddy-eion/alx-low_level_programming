@@ -4,6 +4,7 @@
  * main - entry point
  *
  * Description: prints a to z execpt e and q
+ * Return: 0
  */
 int main(void)
 {
