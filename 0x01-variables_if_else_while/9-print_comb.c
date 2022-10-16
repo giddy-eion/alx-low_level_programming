@@ -5,7 +5,7 @@
  *
  * Description: prints 1 to 9 with spaces ans commas in between
  * Return: 0
- *//
+ */
 int main(void)
 {
 	int c;
