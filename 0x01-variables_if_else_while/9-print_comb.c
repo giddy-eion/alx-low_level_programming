@@ -9,7 +9,7 @@
 int main(void)
 {
 	int c;
-mm
+
 	for (c = 48; c <= 57; c++)
 	{
 		purchar(c);
