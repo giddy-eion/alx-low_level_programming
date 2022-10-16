@@ -3,7 +3,7 @@
 /**
  * main - entry point (void)
  *
- * Description: a combination of 3 digits counter seperated by commas and spaces
+ * Description: a combination of 3 digits counter seperated by commas and space
  * Return: 0
  */
 int main(void)
