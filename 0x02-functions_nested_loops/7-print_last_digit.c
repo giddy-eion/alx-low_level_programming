@@ -5,7 +5,7 @@
  * @n: value
  *
  * Description: prints last digit of a values
- * Return: last digit 
+ * Return: last_digit
  */
 int print_last_digit(int n)
 {
