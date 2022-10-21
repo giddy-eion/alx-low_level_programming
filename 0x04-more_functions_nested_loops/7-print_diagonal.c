@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - prints diagonal equal to value of n
- * @n; value in integer
+ * @n: value
  */
 void print_diagonal(int n)
 {
