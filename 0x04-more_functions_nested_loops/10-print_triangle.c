@@ -22,7 +22,7 @@ void print_triangle(int size)
 			}
 			if (hgt == size)
 				continue;
-			&putchar('\n');
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
