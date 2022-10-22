@@ -14,7 +14,7 @@ void print_square(int size)
 		{
 			_putchar('#');
 
-			if (hegt == size - q)
+			if (hegt == size - 1)
 				continue;
 			_putchar('\n');
 		}
