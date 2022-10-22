@@ -8,14 +8,14 @@ void print_square(int size)
 {
 	int hegt, widt;
 
-	for (hegt = 0; hegt < size; hegt++)
+	if (size > 0)
 	{
-		for (widt = 0; widt < size; widt++)
+		for (hegt = 0; hegt < size; hegt++)
 		{
-			_putchar('#');
-
-			if (hegt == size - 1)
-				continue;
+			for (widt = 0; widt < size; widt++)
+			{
+				_putchar('#');
+			}
 			_putchar('\n');
 		}
 	}
