@@ -30,7 +30,7 @@ int main(void)
 			printf("Buzz");
 		}
 
-		if (a == 101)
+		if (a == 100)
 			continue;
 		putchar(' ');
 
