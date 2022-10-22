@@ -19,18 +19,18 @@ int main(void)
 		}
 		else if ((a % 3) == 0 && (a % 5) == 0)
 		{
-			printf("fizzbuzz");
+			printf("FizzBuzz");
 		}
 		else if ((a % 3) == 0)
 		{
-			printf("fizz");
+			printf("Fizz");
 		}
 		else if ((a % 5) == 0)
 		{
-			printf("buzz");
+			printf("Buzz");
 		}
 
-		if (a == 100)
+		if (a == 101)
 			continue;
 		putchar(' ');
 
