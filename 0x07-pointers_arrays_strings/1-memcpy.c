@@ -7,11 +7,11 @@
  * @n: unsigned int
  * Return: dest if successfil
  */
-void *_memcpy(void *dest, void *src, unsigned int n)
+void *_memcpy(void *dest, const void *src, unsigned int n)
 {
 	unsigned int index;
 	unsigned char *destination = dest;
-	unsigned char *source = src;
+	const unsigned char *source = src;
 
 	for (index = 0; index < n; index++)
 		destination[index] = source[index];
