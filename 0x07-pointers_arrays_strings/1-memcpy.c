@@ -17,3 +17,4 @@ void *_memcpy(void *dest, const void *src, unsigned int n)
 		destination[index] = source[index];
 
 	return (dest);
+}
