@@ -7,7 +7,7 @@
  * @n: unsigned int
  * Return: dest if successfil
  */
-void *_memcpy(void *dest, void *src, unsigned tnt n)
+void *_memcpy(void *dest, void *src, unsigned int n)
 {
 	unsigned int index;
 	unsigned char *destination = dest;
