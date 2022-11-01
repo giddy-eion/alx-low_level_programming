@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _memcpy - copies a memory block
+ * _memcpy -copy a memory block into another
  * @dest: void
  * @src: void
- * @n: unsigend int 
- * Return: dest if successful
+ * @n: unsigned int
+ * Return: dest if successfil
  */
-void *_memcpy(void *dest, const void *src, unsigned int n);
+void *_memcpy(void *dest, void *src, unsigned int n)
 {
 	unsigned int index;
 	unsigned char *destination = dest;
@@ -17,4 +17,3 @@ void *_memcpy(void *dest, const void *src, unsigned int n);
 		destination[index] = source[index];
 
 	return (dest);
-}
