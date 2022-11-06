@@ -1,6 +1,12 @@
-#inclue <stdio.h>
+#include <stdio.h>
 
-int main(int argc, char __attribute__((__unused__)) *argv)
+/**
+ * main - prints the number of arguments
+ * @argc: num of arguments passed
+ * @argv: array of string (unused)
+ * Return: 0 if successful
+ */
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
 	int count;
 
