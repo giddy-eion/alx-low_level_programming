@@ -1,6 +1,20 @@
 #include "main.h"
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+/**
+ * _memcpy -copy a memory block into another
+ * @dest: void
+ * @src: void
+ * @n: unsigned int
+ * Return: dest if successfil
+ */
+char *_memcpy(void *dest, const void *src, unsigned int n)
 {
-	return (0);
+	unsigned int index;
+	unsigned char *destination = dest;
+	const unsigned char *source = src;
+
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
+
+	return (dest);
 }
