@@ -1,6 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * create_array - creates an array with same memory of c
+ * @size: int
+ * @c: char
+ * Return: null if size is 0
+ * null if ar is null
+ * array if successful
+ */
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
