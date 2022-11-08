@@ -4,7 +4,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
-	int num;
+	unsigned int num;
 
 	if (size == 0)
 	{
@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	{
 		ar = malloc(sizeof(char) * size);
 
-		if (array == NULL)
+		if (ar == NULL)
 		{
 			return (NULL);
 		}
@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 		{
 			for (num = 0; num < size; num++)
 			{
-				ar[num] = c
+				ar[num] = c;
 			}
 			return (ar);
 		}
