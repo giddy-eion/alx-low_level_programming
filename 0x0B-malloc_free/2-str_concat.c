@@ -12,8 +12,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int a = 0, b, c, d;
-	char dup;
+	int a = 0, b, c;
+	char *dup;
 
 	if (s1 == NULL)
 	{
