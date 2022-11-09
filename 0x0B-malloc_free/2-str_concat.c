@@ -12,8 +12,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int a = 0, b, c;
-	char *dup;
+	char *array;
+	int len = 0, a, b, d, c = 0, e;
 
 	if (s1 == NULL)
 	{
@@ -24,27 +24,20 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	for (c = 0; s1[c] || s2[c]; c++)
-	{
-		a++;
-	}
+	for (a = 0; s1[a]; a++)
+		len++;
+	for (b = 0; s1[b]; b++)
+		len++;
 
-	dup = malloc(sizeof(char) * a);
+	array = malloc(sizeof(char) * len);
 
-	if (dup == NULL)
-	{
+	if (array == NULL)
 		return (NULL);
-	}
 
-	for (c = 0; s1[c]; c++)
-	{
-		dup[b++] = s1[c];
-	}
+	for (d = 0; s1[d]; d++)
+		array[c++] = s1[d];
+	for (e = 0; s2[e]; e++)
+		array[c++] = s2[e];
 
-	for (c = 0; s2[c]; c++)
-	{
-		dup[b++] = s2[c];
-	}
-
-	return (dup);
+	return (array);
 }
