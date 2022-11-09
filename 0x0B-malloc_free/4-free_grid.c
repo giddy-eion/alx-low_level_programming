@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * free_grid - releases memory allocation
+ * @grid: array
+ * @height: int value
+ */
 void free_grid(int **grid, int height)
 {
 	int b;
