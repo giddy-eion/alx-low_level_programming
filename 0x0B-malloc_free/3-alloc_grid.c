@@ -4,12 +4,12 @@
 int **alloc_grid(int width, int height)
 {
 	int **array;
-	int a, b, c, d;
+	int a, b, c;
 
 	if ((width <= 0) || (height <= 0))
 		return (NULL);
 
-	array = mollac(sizeof(int) * height);
+	array = mallac(sizeof(int) * height);
 	if (array == NULL)
 		return (NULL);
 	for (a = 0; a < height; a++)
@@ -32,7 +32,7 @@ int **alloc_grid(int width, int height)
 	{
 		for (c = 0; c < width; c++)
 		{
-			array[b][c] = 0
+			array[b][c] = 0;
 		}
 	}
 	return (array);
