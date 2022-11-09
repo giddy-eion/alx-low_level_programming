@@ -26,10 +26,10 @@ char *str_concat(char *s1, char *s2)
 
 	for (a = 0; s1[a]; a++)
 		len++;
-	len += 1
+	len += 1;
 	for (b = 0; s1[b]; b++)
 		len++;
-	len += 1
+	len += 1;
 
 	array = malloc(sizeof(char) * len);
 
