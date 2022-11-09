@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * alloc_grid -  returns a pointer to a 2 dimensional array
+ * @width: horizontal length
+ * @height: vertical length
+ * Return: array if successful
+ * Null if there is failure
+ */
 int **alloc_grid(int width, int height)
 {
 	int **array;
