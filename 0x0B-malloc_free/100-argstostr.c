@@ -4,7 +4,7 @@
 char *argstostr(int ac, char **av)
 {
 	int a, b;
-	char **ar;
+	char *ar;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 
 	for (a = 0; a <= b; a++)
         {
-                if (a % 2 = 0)
+                if (a % 2 == 0)
                 {
                         ar[a] = av[a];
                 }
