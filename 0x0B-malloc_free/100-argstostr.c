@@ -9,21 +9,35 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	b = (((ac - 1) * 2) + 1);
-	ar = malloc(sizeof(char) * b);
+	for (a = 0; a < ac; a++)
+	{
+		for (b = 0; *av[a][b]; b++)
+			c++;
+	}
+
+	ar = malloc(sizeof(char) * (ac - 1));
+
 	if (ar == NULL)
 		return (NULL);
 
-	for (a = 0; a <= b; a++)
-        {
-                if (a % 2 == 0)
-                {
-                        ar[a] = *av[a];
-                }
-                else if (a == 1 || a % 2 == 1)
-                {
-                        ar[a] = '\n';
-                }
-        }
+	for (a = 0; a < ac; a++)
+	{
+		for (b = 0; *av[a][b]; b++)
+		{
+			ar[a] = malloc(sizeof(char) * b + 1);
+		}
+	}
+	if (ar[a] == NULL)
+		return (NULL);
+
+	for (a = 0; a < ac; a++)
+	{
+		for (b = 0; *av[a][b]; b++)
+		{
+			ar[a][b] = *av[a][b];
+		}
+		ar[a] = '\n';
+	}
 	return (ar);
+
 }
