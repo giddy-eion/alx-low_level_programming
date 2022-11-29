@@ -1,7 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -10,10 +9,10 @@
  * @len: int type
  * @next: points to a next node
  */
-typedef struct list_t
+typedef struct list_s
 {
-	char str;
-	int len;
+	char *str;
+	unsigned int len;
 	struct list_t *next;
 } list_t;
 
